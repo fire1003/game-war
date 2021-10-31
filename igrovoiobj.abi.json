@@ -1,0 +1,43 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "addunit",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"attkunit","type":"uint256"},
+				{"name":"defunit","type":"uint256"},
+				{"name":"lifeonit","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "life",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"life","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"life","type":"uint256"}
+	]
+}

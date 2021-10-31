@@ -1,0 +1,112 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"defbaza","type":"uint256"},
+				{"name":"lifebaza","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addunit",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"attkunit","type":"uint256"},
+				{"name":"defunit","type":"uint256"},
+				{"name":"lifeunit","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "prinattack",
+			"inputs": [
+				{"name":"powerattk","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getdefbaza",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getlifebaza",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "sendTransaction_all_delete",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "kill",
+			"inputs": [
+				{"name":"addrbaza","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "def",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"def","type":"uint256"}
+			]
+		},
+		{
+			"name": "life",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"life","type":"uint256"}
+			]
+		},
+		{
+			"name": "keyunit",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"keyunit","type":"int8[]"}
+			]
+		},
+		{
+			"name": "arrayunit",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"attk","type":"uint256"},{"name":"def","type":"uint256"},{"name":"life","type":"uint256"},{"name":"adr","type":"address"}],"name":"arrayunit","type":"map(int8,tuple)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"def","type":"uint256"},
+		{"name":"life","type":"uint256"},
+		{"name":"keyunit","type":"int8[]"},
+		{"components":[{"name":"name","type":"string"},{"name":"attk","type":"uint256"},{"name":"def","type":"uint256"},{"name":"life","type":"uint256"},{"name":"adr","type":"address"}],"name":"arrayunit","type":"map(int8,tuple)"}
+	]
+}
